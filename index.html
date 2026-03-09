@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description = "This is a website is for filtered courses practice">
+    <meta author = "Tayron Murillo">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/getdates.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="images/TayLogo.svg" alt="Tays Logo">
+        <span> Tayron Murillo </span>
+        <button id="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>Course Work</h2>
+        </section>
+
+        <section>
+
+            <h2>Location</h2>
+            <p>Costa Rica</p>
+            
+        </section>
+
+        <section>
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button id="all">All Courses</button>
+                <button id="wdd">WDD Courses</button>
+                <button id="cse">CSE Courses</button>
+            </div>
+        
+            <div id="courses"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+
+        </p>
+        <p>
+            © <span id="currentYear"></span> Made By Tay | From the land of Pura Vida - Costa Rica
+
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+    
+</body>
+</html>
