@@ -1,0 +1,251 @@
+:root{
+    --primary:#243E36;
+    --secondary:#7CA982;
+    --background:#F1F7ED;
+    --text:#243E36;
+    --white:#ffffff;
+    --border:#d9e4d3;
+  
+    --radius:12px;
+    --button-padding-y:0.85rem;
+    --button-padding-x:1.1rem;
+    --button-font-size:0.95rem;
+    --button-font-weight:500;
+    --transition:0.25s ease;
+  }
+  
+  *{
+    box-sizing:border-box;
+  }
+  
+  body{
+    margin:0;
+    font-family:"Inter",sans-serif;
+    background:var(--background);
+    color:var(--text);
+  }
+  
+  img{
+    max-width:100%;
+    height:auto;
+    display:block;
+  }
+  
+  /* HEADER */
+  
+  header{
+    background:var(--primary);
+    color:white;
+    padding:1rem;
+  }
+  
+  .top-bar{
+    max-width:1200px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:1fr auto;
+    align-items:center;
+    gap:1rem;
+  }
+  
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:0.8rem;
+  }
+  
+  .brand img{
+    width:48px;
+    height:48px;
+  }
+  
+  .brand span{
+    font-family:"Story Script",cursive;
+    font-size:2rem;
+    color:white;
+  }
+  
+  /* HAMBURGER */
+  
+  #menu-button{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:6px;
+    width:44px;
+    height:44px;
+    background:none;
+    border:none;
+    cursor:pointer;
+  }
+  
+  #menu-button span{
+    width:28px;
+    height:2px;
+    background:white;
+    border-radius:999px;
+    transition:transform 0.3s ease,opacity 0.3s ease;
+  }
+  
+  #menu-button.open span:nth-child(1){
+    transform:translateY(8px) rotate(45deg);
+  }
+  
+  #menu-button.open span:nth-child(2){
+    opacity:0;
+  }
+  
+  #menu-button.open span:nth-child(3){
+    transform:translateY(-8px) rotate(-45deg);
+  }
+  
+  /* NAVIGATION */
+  
+  nav{
+    grid-column:1/-1;
+  }
+  
+  .navigation{
+    display:none;
+    list-style:none;
+    padding:0;
+    margin:1rem 0 0;
+  }
+  
+  .navigation.open{
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+  }
+  
+  .navigation a{
+    display:block;
+    text-decoration:none;
+    color:white;
+    padding:var(--button-padding-y) var(--button-padding-x);
+    border-radius:var(--radius);
+    font-size:var(--button-font-size);
+    font-weight:var(--button-font-weight);
+    text-align:center;
+    transition:background-color var(--transition),transform 0.2s ease;
+  }
+  
+  .navigation a:hover,
+  .navigation a.active{
+    background:var(--secondary);
+    transform:translateY(-1px);
+  }
+  
+  /* MAIN */
+  
+  main{
+    max-width:1200px;
+    margin:auto;
+    padding:2rem 1rem;
+  }
+  
+  .page-header{
+    text-align:center;
+    margin-bottom:1rem;
+  }
+  
+  h1{
+    font-family:"Story Script",cursive;
+    font-size:7rem;
+    color:var(--primary);
+    margin-bottom:-1rem;
+    margin-top:-1rem;
+  }
+  
+  h2,h3{
+    color:var(--primary);
+  }
+  
+  /* BUTTONS */
+  
+  .view-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:1rem;
+    margin-bottom:2rem;
+  }
+  
+  .view-buttons button{
+    border:none;
+    background:var(--secondary);
+    color:white;
+    padding:var(--button-padding-y) var(--button-padding-x);
+    border-radius:var(--radius);
+    cursor:pointer;
+    font-family:"Inter",sans-serif;
+    font-size:var(--button-font-size);
+    font-weight:var(--button-font-weight);
+    transition:background-color var(--transition),transform 0.2s ease;
+  }
+  
+  .view-buttons button:hover{
+    background:var(--primary);
+    transform:translateY(-1px);
+  }
+  
+  /* GRID VIEW */
+  
+  #members-container.grid-view{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1rem;
+  }
+  
+  #members-container.grid-view section{
+    background:var(--white);
+    padding:1rem;
+    border-radius:var(--radius);
+    border:1px solid var(--border);
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+  }
+  
+  #members-container.grid-view h2{
+    color:var(--primary);
+  }
+  
+  #members-container.grid-view a{
+    color:var(--secondary);
+    font-weight:600;
+    text-decoration:none;
+  }
+  
+  /* LIST VIEW */
+  
+  #members-container.list-view section{
+    background:var(--white);
+    padding:1rem;
+    border-bottom:1px solid #ddd;
+  }
+  
+  #members-container.list-view img{
+    display:none;
+  }
+  
+  /* FOOTER */
+  
+  footer{
+    width:100%;
+    background:var(--primary);
+    color:white;
+    text-align:center;
+    padding:2rem 1rem;
+    margin-top:3rem;
+  }
+  
+  .footer-social{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    margin:1rem 0;
+  }
+  
+  .footer-social img{
+    width:24px;
+  }

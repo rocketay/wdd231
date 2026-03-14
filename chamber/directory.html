@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore local businesses and chamber members in the Escazú Chamber directory.">
+  <meta name="author" content="Tayron Murillo">
+  <title>Escazú Chamber | Directory</title>
+
+  <link rel="icon" href="favicon.ico">
+
+  <meta property="og:title" content="Escazú Chamber Directory">
+  <meta property="og:description" content="Discover businesses, organizations, and chamber members in Escazú, Costa Rica.">
+  <meta property="og:image" content="https://yourdomain.com/chamber/images/social-preview.webp">
+  <meta property="og:url" content="https://yourdomain.com/chamber/directory.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Escazú Chamber">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Story+Script&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="brand">
+        <img src="images/logo.webp" alt="Escazú Chamber logo" width="48" height="48">
+        <span>Escazú Chamber</span>
+      </div>
+
+      <button id="menu-button" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Business Directory</h1>
+      <p>Explore chamber members, local businesses, and organizations in Escazú.</p>
+    </section>
+
+    <div class="view-buttons">
+      <button id="grid-view" type="button">Grid View</button>
+      <button id="list-view" type="button">List View</button>
+    </div>
+
+    <section id="members-container" class="grid-view"></section>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <p><strong>Escazú Chamber</strong></p>
+      <p>Escazú, San José, Costa Rica</p>
+      <p>info@escazuchamber.org</p>
+      <p>(506) 2222-2222</p>
+    </div>
+
+    <div class="footer-social">
+      <a href="#" aria-label="YouTube">
+        <img src="images/youtube.svg" alt="YouTube icon" width="24" height="24">
+      </a>
+      <a href="#" aria-label="Twitter">
+        <img src="images/twitter.svg" alt="Twitter icon" width="24" height="24">
+      </a>
+      <a href="#" aria-label="LinkedIn">
+        <img src="images/linkedin.svg" alt="LinkedIn icon" width="24" height="24">
+      </a>
+    </div>
+
+    <div class="footer-project">
+      <p>Tayron Murillo</p>
+      <p>WDD 231</p>
+      <p>&copy; <span id="currentyear"></span> Escazú Chamber</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>

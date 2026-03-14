@@ -1,0 +1,67 @@
+{
+    "members": [
+      {
+        "name": "Escazú Coffee Roasters",
+        "address": "Avenida Escazú, Escazú, Costa Rica",
+        "phone": "+506 2222-1111",
+        "website": "https://escazucoffee.cr",
+        "image": "coffee.webp",
+        "membership": 3,
+        "description": "Specialty coffee shop and roastery in Escazú."
+      },
+      {
+        "name": "Plaza Escazú Shopping Center",
+        "address": "San Rafael de Escazú",
+        "phone": "+506 2222-2222",
+        "website": "https://plazaescazu.com",
+        "image": "plaza.webp",
+        "membership": 3,
+        "description": "A shopping destination with restaurants and retail stores."
+      },
+      {
+        "name": "Escazú Fitness Club",
+        "address": "San Antonio, Escazú",
+        "phone": "+506 2222-3333",
+        "website": "https://escazufitness.com",
+        "image": "fitness.webp",
+        "membership": 2,
+        "description": "Local fitness center offering classes and training."
+      },
+      {
+        "name": "Green Valley Real Estate",
+        "address": "San Rafael, Escazú",
+        "phone": "+506 2222-4444",
+        "website": "https://greenvalley.cr",
+        "image": "realestate.webp",
+        "membership": 2,
+        "description": "Real estate agency helping people find homes in Escazú."
+      },
+      {
+        "name": "Escazú Digital Marketing",
+        "address": "Trejos Montealegre",
+        "phone": "+506 2222-5555",
+        "website": "https://escazudigital.com",
+        "image": "marketing.webp",
+        "membership": 1,
+        "description": "Digital marketing services for local businesses."
+      },
+      {
+        "name": "Mountain View Hotel",
+        "address": "San Antonio de Escazú",
+        "phone": "+506 2222-6666",
+        "website": "https://mountainviewhotel.cr",
+        "image": "hotel.webp",
+        "membership": 3,
+        "description": "Boutique hotel overlooking the Escazú mountains."
+      },
+      {
+        "name": "Escazú Medical Center",
+        "address": "San Rafael de Escazú",
+        "phone": "+506 2222-7777",
+        "website": "https://escazumedical.cr",
+        "image": "medical.webp",
+        "membership": 2,
+        "description": "Modern healthcare services in Escazú."
+      }
+    ]
+  }
