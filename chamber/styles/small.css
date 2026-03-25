@@ -147,22 +147,87 @@
   
   .page-header{
     text-align:center;
-    margin-bottom:1rem;
+    margin-bottom:2rem;
   }
   
   h1{
     font-family:"Story Script",cursive;
-    font-size:7rem;
+    font-size:3rem;
     color:var(--primary);
-    margin-bottom:-1rem;
-    margin-top:-1rem;
+    margin:0;
   }
   
   h2,h3{
     color:var(--primary);
   }
   
-  /* BUTTONS */
+  /* HERO */
+  
+  .hero{
+    position:relative;
+    border-radius:18px;
+    overflow:hidden;
+    margin-bottom:2rem;
+    box-shadow:0 8px 24px rgba(0,0,0,.12);
+  }
+  
+  .hero img{
+    width:100%;
+    min-height:280px;
+    object-fit:cover;
+  }
+  
+  .hero-content{
+    position:absolute;
+    inset:auto 1rem 1rem 1rem;
+    background:rgba(255,255,255,0.88);
+    padding:1rem;
+    border-radius:var(--radius);
+  }
+  
+  .hero-content h1{
+    margin-bottom:0.75rem;
+  }
+  
+  .cta-button{
+    display:inline-block;
+    text-decoration:none;
+    background:var(--secondary);
+    color:white;
+    padding:var(--button-padding-y) var(--button-padding-x);
+    border-radius:var(--radius);
+    font-size:var(--button-font-size);
+    font-weight:var(--button-font-weight);
+    transition:background-color var(--transition),transform 0.2s ease;
+  }
+  
+  .cta-button:hover{
+    background:var(--primary);
+    transform:translateY(-1px);
+  }
+  
+  /* HOME GRID */
+  
+  .home-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1rem;
+    margin-bottom:2rem;
+  }
+  
+  .card{
+    background:var(--white);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:1rem;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+  }
+  
+  .card h2{
+    margin-top:0;
+  }
+  
+  /* DIRECTORY BUTTONS */
   
   .view-buttons{
     display:flex;
@@ -190,7 +255,7 @@
     transform:translateY(-1px);
   }
   
-  /* GRID VIEW */
+  /* DIRECTORY GRID VIEW */
   
   #members-container.grid-view{
     display:grid;
@@ -216,7 +281,7 @@
     text-decoration:none;
   }
   
-  /* LIST VIEW */
+  /* DIRECTORY LIST VIEW */
   
   #members-container.list-view section{
     background:var(--white);
@@ -226,6 +291,49 @@
   
   #members-container.list-view img{
     display:none;
+  }
+  
+  /* SPOTLIGHTS */
+  
+  .spotlights{
+    margin-top:2rem;
+  }
+  
+  .spotlights h2{
+    text-align:center;
+    margin-bottom:1rem;
+  }
+  
+  #spotlights-container{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1rem;
+  }
+  
+  #spotlights-container section{
+    background:var(--white);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:1rem;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    text-align:center;
+  }
+  
+  #spotlights-container img{
+    width:100%;
+    max-width:220px;
+    margin:0 auto 1rem;
+    border-radius:10px;
+  }
+  
+  #spotlights-container h3{
+    margin:0.5rem 0;
+  }
+  
+  #spotlights-container a{
+    color:var(--secondary);
+    text-decoration:none;
+    font-weight:600;
   }
   
   /* FOOTER */
@@ -249,3 +357,4 @@
   .footer-social img{
     width:24px;
   }
+  
