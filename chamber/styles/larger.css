@@ -71,6 +71,18 @@
       text-align:left;
     }
     
+    /* JOIN PAGE */
+    
+    .join-layout{
+      grid-template-columns:minmax(0, 1.4fr) minmax(280px, 0.9fr);
+      align-items:start;
+    }
+    
+    .membership-cards{
+      position:sticky;
+      top:1.5rem;
+    }
+    
     /* FOOTER */
     
     footer{
@@ -85,4 +97,3 @@
     }
     
     }
-    
