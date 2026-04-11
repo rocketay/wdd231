@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore local businesses and chamber members in the Escazú Chamber directory.">
+  <meta name="description" content="Discover places of interest in Escazú, Costa Rica.">
   <meta name="author" content="Tayron Murillo">
-  <title>Escazú Chamber | Directory</title>
+  <title>Escazú Chamber | Discover</title>
 
   <link rel="icon" href="favicon.ico">
 
   <meta property="og:title" content="Escazú Chamber of Commerce">
-  <meta property="og:description" content="Discover local businesses, events, and opportunities in Escazú, Costa Rica.">
+  <meta property="og:description" content="Discover places, attractions, and opportunities in Escazú, Costa Rica.">
   <meta property="og:image" content="https://rocketay.github.io/wdd231/chamber/images/hero.png">
-  <meta property="og:url" content="https://rocketay.github.io/wdd231/chamber/index.html">
+  <meta property="og:url" content="https://rocketay.github.io/wdd231/chamber/discover.html">
   <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,7 @@
 
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
-  <script src="scripts/directory.js" defer></script>
+  <script type="module" src="scripts/discover.mjs" defer></script>
 </head>
 <body>
   <header>
@@ -44,9 +44,9 @@
       <nav>
         <ul class="navigation">
           <li><a href="index.html">Home</a></li>
-          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="directory.html">Directory</a></li>
           <li><a href="join.html">Join</a></li>
-          <li><a href="discover.html">Discover</a></li>
+          <li><a href="discover.html" class="active">Discover</a></li>
         </ul>
       </nav>
     </div>
@@ -54,16 +54,15 @@
 
   <main>
     <section class="page-header">
-      <h1>Business Directory</h1>
-      <p>Explore chamber members, local businesses, and organizations in Escazú.</p>
+      <h1>Discover Escazú</h1>
+      <p>Explore places of interest and attractions around Escazú.</p>
     </section>
 
-    <div class="view-buttons">
-      <button id="grid-view" type="button">Grid View</button>
-      <button id="list-view" type="button">List View</button>
-    </div>
+    <section class="visit-message">
+      <p id="visitor-message"></p>
+    </section>
 
-    <section id="members-container" class="grid-view"></section>
+    <section id="discover-grid" class="discover-grid"></section>
   </main>
 
   <footer>
@@ -75,15 +74,9 @@
     </div>
 
     <div class="footer-social">
-      <a href="#" aria-label="YouTube">
-        <img src="images/youtube.svg" alt="YouTube icon" width="24" height="24">
-      </a>
-      <a href="#" aria-label="Twitter">
-        <img src="images/twitter.svg" alt="Twitter icon" width="24" height="24">
-      </a>
-      <a href="#" aria-label="LinkedIn">
-        <img src="images/linkedin.svg" alt="LinkedIn icon" width="24" height="24">
-      </a>
+      <a href="#"><img src="images/youtube.svg" alt="YouTube"></a>
+      <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+      <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
     </div>
 
     <div class="footer-project">
