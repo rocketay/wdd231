@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriTrack Daily | Planner</title>
+  <meta name="description" content="Plan your meals, save daily nutrition entries, and review calories and macros with NutriTrack Daily.">
+  <meta name="author" content="Tayron Murillo">
+  <meta property="og:title" content="NutriTrack Daily | Planner">
+  <meta property="og:description" content="Create a daily nutrition plan and keep your meal log organized.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-image.svg">
+  <meta property="og:url" content="https://yourusername.github.io/wdd231/finalproject/planner.html">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css">
+  <script type="module" src="scripts/planner.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container top-bar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">N</span>
+        <span>NutriTrack Daily</span>
+      </a>
+      <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav id="primary-nav" class="navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="planner.html">Planner</a>
+        <a href="contact.html">Goals</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="planner-main">
+    <section class="page-hero">
+      <div class="container page-hero-grid">
+        <div>
+          <p class="eyebrow">Plan and review</p>
+          <h1>Daily meal planner</h1>
+          <p>Save your food choices, keep track of calories, and review your progress during the day.</p>
+        </div>
+        <img src="images/planner-graphic.svg" width="420" height="300" alt="Nutrition planner illustration" loading="lazy">
+      </div>
+    </section>
+
+    <section class="planner-section">
+      <div class="container planner-grid">
+        <article class="panel">
+          <h2>Add a meal item</h2>
+          <form id="planner-form" class="planner-form">
+            <label for="food-select">Food
+              <select id="food-select" name="food" required>
+                <option value="">Choose a food</option>
+              </select>
+            </label>
+            <label for="meal-type">Meal
+              <select id="meal-type" name="meal" required>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dinner">Dinner</option>
+                <option value="Snack">Snack</option>
+              </select>
+            </label>
+            <label for="servings">Servings
+              <input id="servings" name="servings" type="number" min="1" max="5" step="1" value="1" required>
+            </label>
+            <button class="button" type="submit">Save to My Day</button>
+          </form>
+        </article>
+
+        <article class="panel">
+          <h2>Today summary</h2>
+          <div class="totals-grid">
+            <div class="total-box">
+              <span>Calories</span>
+              <strong id="total-calories">0</strong>
+            </div>
+            <div class="total-box">
+              <span>Protein</span>
+              <strong id="total-protein">0 g</strong>
+            </div>
+            <div class="total-box">
+              <span>Carbs</span>
+              <strong id="total-carbs">0 g</strong>
+            </div>
+            <div class="total-box">
+              <span>Fats</span>
+              <strong id="total-fats">0 g</strong>
+            </div>
+          </div>
+          <button id="clear-log" class="button button-secondary" type="button">Clear My Day</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="log-section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Saved data</p>
+            <h2>My food log</h2>
+          </div>
+        </div>
+        <div id="planner-log" class="log-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> NutriTrack Daily | Tayron Murillo | Costa Rica</p>
+      <div class="footer-links">
+        <a href="attributions.html">Attributions</a>
+        <a href="https://youtu.be/your-video-link">Video Demo</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

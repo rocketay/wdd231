@@ -1,0 +1,21 @@
+[
+    {"id":1,"name":"Oatmeal Bowl","category":"Breakfast","serving":"1 bowl","calories":220,"protein":8,"carbs":39,"fats":4,"fiber":6,"description":"Whole grain oatmeal topped with banana slices and cinnamon."},
+    {"id":2,"name":"Greek Yogurt Parfait","category":"Breakfast","serving":"1 cup","calories":190,"protein":17,"carbs":18,"fats":5,"fiber":2,"description":"Greek yogurt with berries and a light granola topping."},
+    {"id":3,"name":"Scrambled Eggs","category":"Breakfast","serving":"2 eggs","calories":180,"protein":12,"carbs":2,"fats":13,"fiber":0,"description":"Classic scrambled eggs with a soft texture and high protein."},
+    {"id":4,"name":"Grilled Chicken Salad","category":"Lunch","serving":"1 plate","calories":320,"protein":31,"carbs":14,"fats":16,"fiber":5,"description":"Mixed greens with grilled chicken, tomatoes, and avocado."},
+    {"id":5,"name":"Turkey Sandwich","category":"Lunch","serving":"1 sandwich","calories":340,"protein":24,"carbs":33,"fats":12,"fiber":4,"description":"Turkey sandwich with lettuce, tomato, and whole grain bread."},
+    {"id":6,"name":"Quinoa Bowl","category":"Lunch","serving":"1 bowl","calories":360,"protein":14,"carbs":48,"fats":12,"fiber":7,"description":"Quinoa with chickpeas, cucumbers, carrots, and olive oil."},
+    {"id":7,"name":"Salmon Plate","category":"Dinner","serving":"1 plate","calories":410,"protein":34,"carbs":18,"fats":22,"fiber":4,"description":"Baked salmon served with rice and steamed vegetables."},
+    {"id":8,"name":"Chicken and Rice","category":"Dinner","serving":"1 plate","calories":430,"protein":35,"carbs":45,"fats":10,"fiber":3,"description":"Balanced dinner with grilled chicken breast and seasoned rice."},
+    {"id":9,"name":"Vegetable Pasta","category":"Dinner","serving":"1 bowl","calories":390,"protein":13,"carbs":56,"fats":11,"fiber":6,"description":"Pasta with zucchini, tomato sauce, and parmesan cheese."},
+    {"id":10,"name":"Apple Slices","category":"Snack","serving":"1 medium apple","calories":95,"protein":0,"carbs":25,"fats":0,"fiber":4,"description":"Fresh apple slices for a quick, light snack."},
+    {"id":11,"name":"Almond Mix","category":"Snack","serving":"30 g","calories":170,"protein":6,"carbs":6,"fats":14,"fiber":3,"description":"Roasted almonds that provide healthy fats and crunch."},
+    {"id":12,"name":"Protein Smoothie","category":"Snack","serving":"1 glass","calories":240,"protein":21,"carbs":20,"fats":7,"fiber":3,"description":"Smoothie with milk, banana, and protein powder."},
+    {"id":13,"name":"Avocado Toast","category":"Breakfast","serving":"2 slices","calories":260,"protein":8,"carbs":24,"fats":15,"fiber":7,"description":"Whole grain toast topped with mashed avocado and seeds."},
+    {"id":14,"name":"Lentil Soup","category":"Lunch","serving":"1 bowl","calories":280,"protein":18,"carbs":37,"fats":6,"fiber":10,"description":"Warm lentil soup with vegetables and herbs."},
+    {"id":15,"name":"Beef Stir Fry","category":"Dinner","serving":"1 plate","calories":450,"protein":32,"carbs":29,"fats":21,"fiber":5,"description":"Lean beef stir fry with peppers, broccoli, and rice."},
+    {"id":16,"name":"Cottage Cheese Cup","category":"Snack","serving":"1 cup","calories":160,"protein":20,"carbs":8,"fats":4,"fiber":0,"description":"Cottage cheese paired with pineapple chunks."},
+    {"id":17,"name":"Tuna Wrap","category":"Lunch","serving":"1 wrap","calories":350,"protein":28,"carbs":31,"fats":11,"fiber":5,"description":"Whole wheat wrap with tuna salad and spinach."},
+    {"id":18,"name":"Sweet Potato Bowl","category":"Dinner","serving":"1 bowl","calories":370,"protein":15,"carbs":52,"fats":10,"fiber":8,"description":"Sweet potato, black beans, corn, and fresh salsa."}
+  ]
+  

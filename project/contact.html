@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriTrack Daily | Goals</title>
+  <meta name="description" content="Set your nutrition goals and share your healthy eating preferences with NutriTrack Daily.">
+  <meta name="author" content="Tayron Murillo">
+  <meta property="og:title" content="NutriTrack Daily | Goals">
+  <meta property="og:description" content="Use the nutrition goals form to build a healthier routine.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-image.svg">
+  <meta property="og:url" content="https://yourusername.github.io/wdd231/finalproject/contact.html">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css">
+  <script type="module" src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container top-bar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">N</span>
+        <span>NutriTrack Daily</span>
+      </a>
+      <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav id="primary-nav" class="navigation">
+        <a href="index.html">Home</a>
+        <a href="planner.html">Planner</a>
+        <a class="active" href="contact.html">Goals</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-grid">
+        <div>
+          <p class="eyebrow">Healthy routine</p>
+          <h1>Set your nutrition goals</h1>
+          <p>Complete the form to outline your health priorities and preferred meal style.</p>
+        </div>
+        <img src="images/goals-graphic.svg" width="420" height="300" alt="Nutrition goals illustration" loading="lazy">
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="container form-grid">
+        <form class="goal-form panel" method="get" action="thankyou.html">
+          <h2>Nutrition goals form</h2>
+          <label for="first-name">First Name
+            <input id="first-name" name="first-name" type="text" title="Enter your first name" autocomplete="given-name" required>
+          </label>
+          <label for="last-name">Last Name
+            <input id="last-name" name="last-name" type="text" title="Enter your last name" autocomplete="family-name" required>
+          </label>
+          <label for="email">Email
+            <input id="email" name="email" type="email" title="Enter your email" autocomplete="email" placeholder="name@example.com" required>
+          </label>
+          <label for="phone">Phone
+            <input id="phone" name="phone" type="tel" title="Enter your mobile phone number" autocomplete="tel" required>
+          </label>
+          <label for="goal-type">Main Goal
+            <select id="goal-type" name="goal-type" required>
+              <option value="Weight Loss">Weight Loss</option>
+              <option value="Maintenance">Maintenance</option>
+              <option value="Muscle Gain">Muscle Gain</option>
+              <option value="Balanced Eating">Balanced Eating</option>
+            </select>
+          </label>
+          <label for="daily-calories">Daily Calorie Target
+            <input id="daily-calories" name="daily-calories" type="number" min="1200" max="4000" step="50" required>
+          </label>
+          <label for="favorite-foods">Favorite Healthy Foods
+            <textarea id="favorite-foods" name="favorite-foods" rows="4" title="Enter your favorite healthy foods"></textarea>
+          </label>
+          <label for="notes">Notes
+            <textarea id="notes" name="notes" rows="4" title="Share any notes or meal preferences"></textarea>
+          </label>
+          <input id="timestamp" name="timestamp" type="hidden">
+          <button class="button" type="submit">Submit Goals</button>
+        </form>
+
+        <article class="panel tip-panel">
+          <h2>Healthy habits to remember</h2>
+          <ul class="tips-list">
+            <li>Plan meals ahead to reduce impulsive choices.</li>
+            <li>Include protein, carbohydrates, and healthy fats in each main meal.</li>
+            <li>Stay hydrated during the day.</li>
+            <li>Track portions to better understand your routine.</li>
+            <li>Choose foods you enjoy so your plan feels realistic.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> NutriTrack Daily | Tayron Murillo | Costa Rica</p>
+      <div class="footer-links">
+        <a href="attributions.html">Attributions</a>
+        <a href="https://youtu.be/your-video-link">Video Demo</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

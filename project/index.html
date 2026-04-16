@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriTrack Daily | Home</title>
+  <meta name="description" content="NutriTrack Daily helps you organize meals, review nutrition facts, and build better daily eating habits.">
+  <meta name="author" content="Tayron Murillo">
+  <meta property="og:title" content="NutriTrack Daily | Home">
+  <meta property="og:description" content="Track daily meals, explore nutrition facts, and build a healthier routine.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-image.svg">
+  <meta property="og:url" content="https://yourusername.github.io/wdd231/finalproject/">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css">
+  <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container top-bar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">N</span>
+        <span>NutriTrack Daily</span>
+      </a>
+      <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav id="primary-nav" class="navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="planner.html">Planner</a>
+        <a href="contact.html">Goals</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Daily nutrition made simple</p>
+          <h1>Build a better eating routine one meal at a time.</h1>
+          <p class="hero-text">NutriTrack Daily helps you review foods, compare nutrients, and save a daily plan that fits your goals.</p>
+          <div class="hero-actions">
+            <a class="button" href="planner.html">Open Meal Planner</a>
+            <a class="button button-secondary" href="#foods">Browse Foods</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="images/hero-bowl.svg" width="540" height="400" alt="Healthy meal bowl illustration" loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <section class="summary-section">
+      <div class="container stats-grid">
+        <article class="stat-card">
+          <h2 id="food-count">0</h2>
+          <p>Foods available</p>
+        </article>
+        <article class="stat-card">
+          <h2 id="average-calories">0</h2>
+          <p>Average calories</p>
+        </article>
+        <article class="stat-card">
+          <h2 id="saved-count">0</h2>
+          <p>Saved planner items</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="foods" class="foods-section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Food database</p>
+            <h2>Explore food nutrition facts</h2>
+          </div>
+          <label class="filter-label" for="category-filter">Filter by category
+            <select id="category-filter">
+              <option value="all">All categories</option>
+            </select>
+          </label>
+        </div>
+        <div id="food-list" class="card-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="food-modal" class="food-modal">
+    <div class="modal-content">
+      <button id="close-modal" class="close-button" aria-label="Close dialog">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> NutriTrack Daily | Tayron Murillo | Costa Rica</p>
+      <div class="footer-links">
+        <a href="attributions.html">Attributions</a>
+        <a href="https://youtu.be/your-video-link">Video Demo</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

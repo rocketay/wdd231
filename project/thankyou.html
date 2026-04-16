@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriTrack Daily | Thank You</title>
+  <meta name="description" content="Thank you for submitting your nutrition goals to NutriTrack Daily.">
+  <meta name="author" content="Tayron Murillo">
+  <meta property="og:title" content="NutriTrack Daily | Thank You">
+  <meta property="og:description" content="Your nutrition goals have been received.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-image.svg">
+  <meta property="og:url" content="https://yourusername.github.io/wdd231/finalproject/thankyou.html">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css">
+  <script type="module" src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container top-bar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">N</span>
+        <span>NutriTrack Daily</span>
+      </a>
+      <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav id="primary-nav" class="navigation">
+        <a href="index.html">Home</a>
+        <a href="planner.html">Planner</a>
+        <a href="contact.html">Goals</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="thankyou-main">
+    <section class="thankyou-section">
+      <div class="container thankyou-card panel">
+        <p class="eyebrow">Form submitted</p>
+        <h1>Thank you for sharing your goals</h1>
+        <div id="submission-results" class="submission-results"></div>
+        <a class="button" href="planner.html">Go to Planner</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> NutriTrack Daily | Tayron Murillo | Costa Rica</p>
+      <div class="footer-links">
+        <a href="attributions.html">Attributions</a>
+        <a href="https://youtu.be/your-video-link">Video Demo</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
